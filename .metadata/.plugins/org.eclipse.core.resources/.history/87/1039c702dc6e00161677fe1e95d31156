@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Recognition Program</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>New Age International IT Consultants</h1>
+<p>New Age International IT Consultants is a worldwide IT consulting company 
+that services many Fortune 500 companies. We provide support to reputable 
+companys in the areas of software engineering, project management, IT analysis, 
+database management systems, and inforation technology security. We also work 
+with companies in sceening their IT hires and provide mentoring to new hires 
+and experienced company staffs.</p>
+
+<h2>Featured Employees Program</h2>
+<p>At New Age International IT Consultants, our employees are our most valuable 
+assets and we strive to honor our employees each year for their royalty and 
+dedication to providing high quality services to our vast arrays of clients. 
+Our employees who are featured on our Featured Employees Program are given 
+recognition along with cash awards and other goodies.</p>
+
+
+<p>Click the button below to see the list of our current 2016 Featured Employees</p>
+
+<h2>List of 2016 Featured Employees</h2>
+
+<img alt="2016 Featured Employees" src="images/employees.jpg">
+
+
+</body>
+</html>

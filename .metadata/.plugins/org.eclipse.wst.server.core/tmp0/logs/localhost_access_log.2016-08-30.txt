@@ -1,0 +1,13 @@
+127.0.0.1 - - [30/Aug/2016:11:27:20 -0400] "GET / HTTP/1.1" 404 998
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:27:21 -0400] "GET /happythursday/addtodb.html HTTP/1.1" 200 2346
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:27:21 -0400] "GET /happythursday/css/simple-sidebar.css HTTP/1.1" 200 2349
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:27:21 -0400] "GET /happythursday/css/bootstrap.min.css HTTP/1.1" 200 121205
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:27:21 -0400] "GET /happythursday/js/jquery.js HTTP/1.1" 200 95788
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:27:21 -0400] "GET /happythursday/js/bootstrap.min.js HTTP/1.1" 200 37051
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:28:22 -0400] "POST /happythursday/addToDB HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:30:58 -0400] "GET /happythursday/addtodb.html HTTP/1.1" 200 2348
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:30:58 -0400] "GET /happythursday/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:30:58 -0400] "GET /happythursday/css/simple-sidebar.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:30:58 -0400] "GET /happythursday/js/jquery.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:30:58 -0400] "GET /happythursday/js/bootstrap.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [30/Aug/2016:11:31:21 -0400] "POST /happythursday/addToDB HTTP/1.1" 200 -

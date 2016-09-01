@@ -1,0 +1,55 @@
+html, body {
+	margin: 15px;
+	padding: 0px;
+	border: 1px;
+	font-size: 100%;
+	background-color: aqua;
+}
+
+header {
+	height: 135px;
+}
+
+main {
+	width: 850px;
+	background-color: aqua;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+aside {
+	width: 450px;
+	background-color: aqua;
+	float: right;
+}
+
+footer {
+	clear: both;
+}
+
+p {
+	font-style: Times New Roman, Tahoma, sans serif;
+	font-size: 22px;
+	color: blue;
+}
+
+h1, h2, h3 {
+	font-family: fantasy, serif;
+	color:maroon;
+}
+
+h1 {
+	font-family: "Helvetica-Bold",Impact, sans serif;
+
+}
+
+ul {
+	color:teal;
+	font-size: 20px;
+}
+a {
+	color: purple;
+	text-decoration: none;
+}
+

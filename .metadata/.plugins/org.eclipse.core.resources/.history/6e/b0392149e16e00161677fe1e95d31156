@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Recognition Program</title>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<main>
+<h1>New Age International IT Consultants</h1>
+<p>New Age International IT Consultants is a worldwide IT consulting company 
+that services many Fortune 500 companies. We provide support to reputable 
+companies in the areas of software engineering, project management, IT analysis, 
+database management systems, and information technology security. We also work 
+with companies in screening their IT hires and provide mentoring to new hires 
+and experienced company staffs.</p>
+
+<h2>Featured Employees Program</h2>
+<p>At New Age International IT Consultants, our employees are our most valuable 
+assets and we strive to honor our employees each year for their royalty and 
+dedication to providing high quality services to our vast arrays of clients. 
+Our employees who are featured on our Featured Employees Program are given 
+recognition along with cash awards and other goodies.</p>
+
+
+
+
+<p>Click the button below to see the list of our current 2016 Featured Employees</p>
+
+<h2>List of 2016 Featured Employees</h2>
+
+<table class="table table-striped">
+  <tr>
+  	<th>Employee ID</th>
+    <th>First Name</th>
+    <th>Last Name</th> 
+    <th>Position</th>
+    <th>Salary</th>
+  </tr>
+  <tr>
+  	<td>1</td>
+    <td>John</td>
+    <td>McDaniel</td> 
+    <td>Project Analyst</td>
+    <td>53720.64</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Marianne</td>
+    <td>Gongalez</td> 
+    <td>Secretary</td>
+    <td>33461.20</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Chris</td>
+    <td>Paul</td> 
+    <td>Software Engineer</td>
+    <td>74125.08</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Halil</td>
+    <td>Sharif</td> 
+    <td>Database Administrator</td>
+    <td>78263.92</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Jessica</td>
+    <td>Smith</td> 
+    <td>Database Developer</td>
+    <td>44842.50</td>
+  </tr>
+</table>
+
+<img alt="2016 Featured Employees" src="images/employees.jpg">
+
+</main>
+
+<aside>
+<h3>Featured Employees Program Recommendation Form</h3>
+
+<img alt="2016 Featured Employees" src="images/employee_pride.jpg" width="250px">
+
+<p>Please use the form below to recommend an employee that you would like to be 
+featured in our Featured Employees Program. We continue to look for your feedback 
+and input so that we can continue to honor our deserving employees who really 
+needs to be recognized and we cannot do the job without your participation. 
+So your recommendation will greatly be appreciated!</p>
+
+<form action="">
+
+</form>
+
+<h3>Featured Employees Program Deletion Form</h3>
+
+<p>Please use the form below to delete the name of an employee who have been 
+featured in our Featured Employees Program who is now retired or is no longer 
+with our company. We will miss them and wish them all the best in retirement 
+or in their new line of work</p>
+
+</aside>
+
+<footer>
+
+<img alt="2016 Featured Employees" src="images/employees2.jpg" width="250px">
+
+<p>For more information about our company or our Featured Employees Program, please click on the link</p>
+
+
+</footer>
+
+</body>
+</html>

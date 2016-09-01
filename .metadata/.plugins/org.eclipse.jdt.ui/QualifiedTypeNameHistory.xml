@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.byethursday.Animal"/>
+<fullyQualifiedTypeName name="com.byethursday.DAO"/>
+<fullyQualifiedTypeName name="com.airhacks.Employee"/>
+<fullyQualifiedTypeName name="com.airhacks.DAO"/>
+</qualifiedTypeNameHistroy>

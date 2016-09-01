@@ -1,0 +1,13 @@
+package com.airhacks;
+
+public class Employee {
+	
+	private String employeeID = null;
+	private String firstName = null;
+	private String lastName = null;
+	private String position = null;
+	private double salary = 0.0;
+	
+	
+
+}

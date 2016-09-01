@@ -1,0 +1,82 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	background-color: aqua;
+}
+
+header {
+	height: 135px;
+}
+
+main {
+	width: 950px;
+	background-color: aqua;
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+	position: relative;
+	right: 20px;
+  	left: 80px;
+  	top: 20px;
+  	bottom: 15px;
+}
+
+aside {
+	width: 650px;
+	background-color: aqua;
+	float: right;
+	padding: 25px;
+	padding-right: 100px;
+}
+
+footer {
+	clear: left;
+	padding: 35px;
+	border: 5px;
+	text-align: center;
+}
+
+p {
+	font-style: Times New Roman, Tahoma, sans serif;
+	font-size: 22px;
+	color: blue;
+}
+
+h1, h2, h3 {
+	font-family: fantasy, serif;
+	color:maroon;
+}
+
+h1 {
+	font-family: "Helvetica-Bold",Impact, sans serif;
+	text-align: center;
+
+}
+
+ul {
+	color:teal;
+	font-size: 20px;
+}
+
+th {
+	color: blue bold;
+	font-size: 24px;
+}
+
+td {
+	color:teal;
+	font-size: 20px;
+}
+
+a {
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover {
+	
+    text-decoration: line-through;
+}
+
