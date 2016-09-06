@@ -1,0 +1,233 @@
+package com.nbaplayer;
+
+import java.nio.file.attribute.UserPrincipalLookupService;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class DAO {
+
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/?user=root&autoReconnect=true&useSSL=false";
+	static final String USER = "root";
+	static final String PASSWORD = "root";
+
+	static Connection CONN = null;
+	static Statement STMT = null;
+	static PreparedStatement PREP_STMT = null;
+	static ResultSet RES_SET = null;
+	static String userInput = null;
+	public static final ArrayList<Player> famousPlayers = new ArrayList<>();
+
+	static Scanner sc = new Scanner(System.in);
+
+	public static void connectToDB() {
+
+		try {
+			Class.forName(JDBC_DRIVER);
+
+			System.out.println("Trying to connect to the database...");
+			CONN = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+			System.out.println("Connected to the database.");
+		} catch (SQLException | ClassNotFoundException e) {
+			System.out.println("Cannot connect o the database.");
+			e.printStackTrace();
+		}
+	}// connectToDB
+
+	public static void readFromDB() {
+
+		connectToDB();
+
+		try {
+			STMT = CONN.createStatement();
+			RES_SET = STMT.executeQuery("SELECT * FROM nba.famous_players;");
+
+			while (RES_SET.next()) {
+
+				Player playerInDB = new Player();
+
+				playerInDB.setPlayerID(RES_SET.getString("player_id"));
+				playerInDB.setFirstName(RES_SET.getString("first_name"));
+				playerInDB.setLastName(RES_SET.getString("last_name"));
+				playerInDB.setCurrentLastTeam(RES_SET.getString("current_last_team"));
+				playerInDB.setPosition(RES_SET.getString("position"));
+				playerInDB.setTotalPoints(RES_SET.getInt("total_points"));
+				playerInDB.setChampionshipsWon(RES_SET.getInt("championships_won"));
+				playerInDB.setMvpWon(RES_SET.getInt("mvp_won"));
+
+				famousPlayers.add(playerInDB);
+
+			}
+
+			for (Player player : famousPlayers) {
+				System.out.println(player);
+
+			}
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}// readFromDB
+
+	public static void writeToDB(Player player) {
+
+//		Player playerToAdd = new Player();
+//
+//		playerToAdd = aboutThePlayer();
+
+		connectToDB();
+
+		try {
+
+			PREP_STMT = CONN.prepareStatement(insertIntoDB);
+
+			PREP_STMT.setString(1, player.getFirstName());
+			PREP_STMT.setString(2, player.getLastName());
+			PREP_STMT.setString(3, player.getCurrentLastTeam());
+			PREP_STMT.setString(4, player.getPosition());
+			PREP_STMT.setInt(5, player.getTotalPoints());
+			PREP_STMT.setInt(6, player.getChampionshipsWon());
+			PREP_STMT.setInt(7, player.getMvpWon());
+
+			PREP_STMT.executeUpdate();
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}// writeToDB
+
+	private static String insertIntoDB = "INSERT INTO `nba`.`famous_players`"
+			+ "(`first_name`, `last_name`, `current_last_team`, `position`, `total_points`, `championships_won`, `mvp_won`)"
+			+ " VALUES " + "(?, ?, ?, ?, ?, ?, ?)";
+
+	private static Player aboutThePlayer() {
+
+		Player playerToAdd = new Player();
+
+		System.out.println("What is the player's first name?");
+		playerToAdd.setFirstName(sc.nextLine());
+
+		System.out.println("What is the player's last name?");
+		playerToAdd.setLastName(sc.nextLine());
+
+		System.out.println("What is the player's current or last team?");
+		playerToAdd.setCurrentLastTeam(sc.nextLine());
+
+		System.out.println("What is/was the player's position?");
+		playerToAdd.setPosition(sc.nextLine());
+
+		System.out.println("What is/was the player's total points?");
+		playerToAdd.setTotalPoints(Integer.parseInt(sc.nextLine()));
+
+		System.out.println("How many championships did the player won?");
+		playerToAdd.setChampionshipsWon(Integer.parseInt(sc.nextLine()));
+
+		System.out.println("How many MVP did the player won?");
+		playerToAdd.setMvpWon(Integer.parseInt(sc.nextLine()));
+
+		return playerToAdd;
+
+	}// aboutThePlayer
+
+	public static void updateToDB(Player player) {
+
+		readFromDB();
+
+		System.out.println("Please enter the player ID of the player you would like to update.");
+		userInput = sc.nextLine();
+		
+//		Player playerToUpdate = new Player();
+//		
+//		playerToUpdate = aboutPlayerUpdate();
+
+		try {
+			PREP_STMT = CONN.prepareStatement(updateToTable);
+			
+			
+			PREP_STMT.setString(1, player.getFirstName());
+			PREP_STMT.setString(2, player.getLastName());
+			PREP_STMT.setString(3, player.getCurrentLastTeam());
+			PREP_STMT.setString(4, player.getPosition());
+			PREP_STMT.setInt(5, player.getTotalPoints());
+			PREP_STMT.setInt(6, player.getChampionshipsWon());
+			PREP_STMT.setInt(7, player.getMvpWon());
+			PREP_STMT.setString(8, player.getPlayerID());
+			
+			PREP_STMT.executeUpdate();
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}// updateToDB
+
+	private static String updateToTable = "UPDATE `nba`.`famous_players`" 
+				+ " SET `first_name` = ?, `last_name` = ?,"
+				+ " `current_last_team` = ?, `position` = ?, `total_points` = ?,"
+				+ " `championships_won` = ?, `mvp_won` = ?" 
+				+ " WHERE `player_id` = ?";
+		
+	private static Player aboutPlayerUpdate() {
+		
+		Player playerToUpdate = new Player();
+		
+		System.out.println("What would you like to update this player's ID to?");
+		playerToUpdate.setPlayerID(sc.nextLine());
+
+		System.out.println("What would you like to update this player's first name to?");
+		playerToUpdate.setFirstName(sc.nextLine());
+
+		System.out.println("What would you like to update this player's last name to?");
+		playerToUpdate.setLastName(sc.nextLine());
+
+		System.out.println("What would you like to update this player's current or last team to?");
+		playerToUpdate.setCurrentLastTeam(sc.nextLine());
+
+		System.out.println("What would you like to update this player's position to?");
+		playerToUpdate.setPosition(sc.nextLine());
+
+		System.out.println("What would you like to update this player's total points to?");
+		playerToUpdate.setTotalPoints(Integer.parseInt(sc.nextLine()));
+
+		System.out.println("What would you like to update this number of championships the player won to?");
+		playerToUpdate.setChampionshipsWon(Integer.parseInt(sc.nextLine()));
+
+		System.out.println("What would you like to update this number of MVP the player won to?");
+		playerToUpdate.setMvpWon(Integer.parseInt(sc.nextLine()));
+		
+		return playerToUpdate;
+		
+	}//aboutPlayerUpdate
+	
+	public static void deleteFromDB() {
+		
+		connectToDB();
+		
+		readFromDB();
+
+		System.out.println("Please enter the player ID of the player you would to delete.");
+		userInput = sc.nextLine();
+		
+		try {
+			PREP_STMT = CONN.prepareStatement(deleteFromTable);
+			
+			PREP_STMT.setString(1, userInput);
+			
+			PREP_STMT.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}//deleteFromDB
+	
+	private static String deleteFromTable = "DELETE FROM `nba`.`famous_players`"
+			+ " WHERE player_id = ?";
+
+}// class

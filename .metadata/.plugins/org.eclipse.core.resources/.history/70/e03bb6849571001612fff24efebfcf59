@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Famous NBA Players</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="player.css">
+
+</head>
+<body>
+
+	<header>
+
+		<h1>Famous NBA Players in History</h1>
+
+	</header>
+
+	<main>
+
+	<h2>A Brief History of the National Basketball Association</h2>
+
+	<p>The National Basketball Association (NBA) is one of the most
+		important professional sport league in North America. The NBA
+		was founded in 1946 in New York City, New York. The NBA has 30 
+		teams which are all based in the United States except for the 
+		Toronto Raptors which is based in Canada. Over the years, a lot 
+		of the NBA players have amassed lots of wealth because they are 
+		paid handsomely. Its been 60 years now since the founding of the 
+		NBA and over that period of time, a lot of the players have become 
+		so famous for being one of the greatest basketball players.</p>
+
+	<h2>List of Some of the Famous NBA Players</h2>
+
+	<p>There are so many great and famous NBA players. Some of those
+		players achieved their greatness on the basketball court while others
+		do so outside of the basketball court by the impact they have on the
+		world.</p>
+	<br>
+
+	<p>Please <a href="read.jsp">click here</a> to see a list of some of the famous NBA
+		players.</p>
+
+	<table class="table table-striped";">
+		<tr>
+			<th>Player ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Current or Last Team</th>
+			<th>Position</th>
+			<th>Total Points</th>
+			<th>Championships Won</th>
+			<th>MVP Won</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+	</table>
+
+	<div><br>
+	<img alt="Kareem Abdul-Jabbar" src="images/Abdul_Jabbar.jpg" width="200px" height="200px"> 
+	<img alt="Larry Bird" src="images/Larry_Bird.jpg" width="200px" height="200px">
+	<img alt="Michael Jordan" src="images/Jordan.jpg" width="200px" height="200px">
+	<img alt="Shaquille O'Neal" src="images/Shaquille_O'Neal.jpg" width="200px" height="200px">
+	</div>
+	</main>
+	<aside>
+		<h3>Famous NBA Player Recommendation Form</h3>
+
+
+
+		<p>Please use the form below to recommend an NBA player employee
+			that you would like to be included in the Famous NBA players list.</p>
+
+		<form action="addToDB" method="post">
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Current or Last Team:<br> <input type="text"
+				name="current_last_team"><br> Position:<br> <input
+				type="text" name="position"><br> Total Points:<br>
+			<input type="text" name="total_points"><br>
+			Championships Won:<br> <input type="text"
+				name="championships_won"><br> MVP Won:<br> <input
+				type="text" name="mvp_won"><br> <input type="submit"
+				value="Submit">
+		</form>
+
+		<h3>Famous NBA Player Update Form</h3>
+
+		<p>Please use the form below to update the information on a famous
+			NBA player.</p>
+
+		<form action="updatePlayer" method="post">
+			Player ID:<br> <input type="text" name="player_id"><br>
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Current or Last Team:<br> <input type="text"
+				name="current_last_team"><br> Position:<br> <input
+				type="text" name="position"><br> Total Points:<br>
+			<input type="text" name="total_points"><br>
+			Championships Won:<br> <input type="text"
+				name="championships_won"><br> MVP Won:<br> <input
+				type="text" name="mvp_won"><br> <input type="submit"
+				value="Submit">
+		</form>
+
+		<h3>Famous NBA Player Deletion Form</h3>
+
+		<p>Please use the form below to delete the name of a famous NBA
+			player from the list of the Famous NBA players.</p>
+
+		<form action="deletePlayer" method="post">
+			Player ID:<br> <input type="text" name="player_id"><br>
+			  <input type="submit" value="Submit">
+		</form>
+
+	</aside>
+
+	<footer>
+
+		<p>
+			For more information and pictures about the Famous NBA Players,
+			please <a href="https://en.wikipedia.org/wiki/National_Basketball_Association/"
+				target="_blank">click here.</a>
+		</p>
+
+	</footer>
+
+</body>
+</html>

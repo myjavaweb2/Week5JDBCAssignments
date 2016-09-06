@@ -1,0 +1,52 @@
+package com.nbaplayer;
+
+import java.util.Scanner;
+
+public class PlayerDatabase {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		String userInput = null;
+		boolean userInputCorrect = false;
+		
+		System.out.println("Welcome to the Famous NBA Players Site");
+		
+		do {
+			System.out.println("Press 1 to read the list of famous NBA players in the database."
+					+ "\nPress 2 to add a famous NBA player to the database."
+					+ "\nPress 3 to update a famous NBA player in the database."
+					+ "\nPress 4 to delete a famous NBA player from the database.");
+			userInput = sc.nextLine();
+			switch (userInput) {
+			case "1":
+
+				DAO.readFromDB();
+				break;
+				
+			case "2":
+				
+				DAO.writeToDB();
+				break;
+				
+			case "3":
+				
+				DAO.updateToDB();
+				break;
+				
+			case "4":
+				
+				DAO.deleteFromDB();
+				break;
+
+			default:
+
+				System.out.println("You have entered an invalid option.");
+				userInputCorrect = true;
+				break;
+			}
+		} while (userInputCorrect);
+	}//main
+
+}//class

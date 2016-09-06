@@ -1,0 +1,62 @@
+package com.nbaplayer;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class DAO {
+	
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	static final String DB_URL = "jdbc:mysql://localhost:3306/?user=root&autoReconnect=true&useSSL=false";
+	static final String USER = "root";
+	static final String PASSWORD = "root";
+	
+	static Connection CONN = null;
+	static Statement STMT = null;
+	static PreparedStatement PREP_STMT = null;
+	static ResultSet RES_SET = null;
+//	public static final ArrayList<Player>famousPlayers = new ArrayList<>();
+	
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void connectToDB() {
+		
+		try {
+			Class.forName(JDBC_DRIVER);
+			
+			System.out.println("Trying to connect to the database...");
+			CONN = DriverManager.getConnection(DB_URL, USER, PASSWORD);
+			System.out.println("Connected to the database.");
+		} catch (SQLException | ClassNotFoundException e) {
+			System.out.println("Cannot connect o the database.");
+			e.printStackTrace();
+		}
+	}//connectToDB
+	
+	public static void readFromDB() {
+		
+		connectToDB();
+		
+		try {
+			STMT = CONN.createStatement();
+			RES_SET = STMT.executeQuery("SELECT * FROM nba.famous_players;");
+			
+			while (RES_SET.next()) {
+				
+				Player playerInDB = new Player();
+				
+				playerInDB.setPlayerID(RES_SET.getString("playerID"));
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+	
+	
+
+}//class

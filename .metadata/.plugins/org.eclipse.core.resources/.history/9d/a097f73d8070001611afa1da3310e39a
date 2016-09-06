@@ -1,0 +1,16 @@
+package com.nbaplayer;
+
+public class player {
+	
+	private String playerID = null;
+	private String firstName = null;
+	private String lastName = null;
+	private String position = null;
+	private String currentLastTeam = null;
+	private int totalPoints = 0;
+	private int championshipsWon = 0;
+	private int mvpWon = 0;
+	
+	
+
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Famous NBA Players</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+</head>
+<body>
+
+	<header>
+
+		<h1>Famous NBA Players in History</h1>
+
+	</header>
+
+	<main>
+
+	<h2>A Brief History of the National Basketball Association</h2>
+
+	<p>The National Basketball Association (NBA) is one of the most
+	important professional sport associations in North America. The NBA 
+	was founded in 1946 in New York City, New York. It is widely considered 
+	to be the premier men's professional basketball league in the world. It 
+	has 30 teams which are all based in the United States except for 1 that 
+	is based in Canada. Over the years, a lot of the NBA players have amassed 
+	lot of wealth because they are paid handsomely than anyone can every dream 
+	of earning from regular mearge paying jobs. As a result, almost everyone 
+	want to become professional basketball players. Unfortunately, it requires 
+	some supreme basketball skills to become a professional basketball player 
+	and not everyone is so endowed with those unique high sportsmanship skills. 
+	Its been over 70 years now since the founding of the NBA and over that 
+	period of time, a lot of players have become so famous for being one of 
+	the greatest basketball players.</p>
+
+	<h2>List of Some of the Famous NBA Players</h2>
+
+	<table class="table table-striped">
+		<tr>
+			<th>Employee ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Position</th>
+			<th>Salary</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>John</td>
+			<td>McDaniel</td>
+			<td>Project Analyst</td>
+			<td>53720.64</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Marianne</td>
+			<td>Gongalez</td>
+			<td>Secretary</td>
+			<td>33461.20</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Chris</td>
+			<td>Paul</td>
+			<td>Software Engineer</td>
+			<td>74125.08</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Halil</td>
+			<td>Sharif</td>
+			<td>Database Administrator</td>
+			<td>78263.92</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Jessica</td>
+			<td>Smith</td>
+			<td>Database Developer</td>
+			<td>44842.50</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>William</td>
+			<td>McCain</td>
+			<td>Manager</td>
+			<td>82207.12</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>Laura</td>
+			<td>Johnson</td>
+			<td>Janitor</td>
+			<td>18261.37</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>Claire</td>
+			<td>Krasinski</td>
+			<td>Director</td>
+			<td>107358.64</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>Steve</td>
+			<td>Pileri</td>
+			<td>Web Developer</td>
+			<td>62375.95</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>Timothy</td>
+			<td>Samuel</td>
+			<td>CEO</td>
+			<td>286786.35</td>
+		</tr>
+	</table>
+	<br>
+	<img alt="2016 Featured Employees" src="images/employees.jpg"> </main>
+
+	<aside>
+		<h3>Featured Employee Program Recommendation Form</h3>
+
+		<img alt="2016 Featured Employees" src="images/employee_pride.jpg"
+			width="250px"><br>
+
+		<p>Please use the form below to recommend an employee that you
+			would like to be featured in our Featured Employee Program. We
+			continue to look for your feedback and input so that we can continue
+			to honor our deserving employees who really need to be recognized and
+			we cannot do the job without your participation in this worthwhile
+			program. So your recommendation will greatly be appreciated!</p>
+
+		<form action="addToDatabase" method="post">
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Position:<br> <input type="text" name="position"><br>
+			Salary:<br> <input type="text" name="salary"><br> 
+			<input type="submit" value="Submit">
+		</form>
+
+		<h3>Featured Employee Program Deletion Form</h3>
+
+		<p>Please use the form below to delete the name of an employee who
+			have been featured in our Featured Employee Program who is now
+			retired or is no longer with our company. We will miss them and wish
+			them all the best in retirement or in their new line of work</p>
+
+		<form action="">
+			Employee ID:<br> <input type="text" name="employee_id"><br>
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Position:<br> <input type="text" name="position"><br>
+			Salary:<br> <input type="text" name="salary"><br> <input
+				type="submit" value="Submit">
+		</form>
+
+		<h3>Featured Employee Program Update Form</h3>
+
+		<p>Please use the form below to update the information on an
+			employee who is featured in our Featured Employee Program. We try to
+			have accurate information about each of our Featured Employees and we
+			will appreciate your help in ensuring that we always have the correct
+			information on our Featured Employees.</p>
+
+		<form action="">
+			Employee ID:<br> <input type="text" name="employee_id"><br>
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Position:<br> <input type="text" name="position"><br>
+			Salary:<br> <input type="text" name="salary"><br> <input
+				type="submit" value="Submit">
+		</form>
+
+	</aside>
+
+	<footer>
+
+		<img alt="2016 Featured Employees" src="images/employees2.jpg"
+			width="250px">
+
+		<p>
+			For more information and pictures about our Featured Employees
+			Program, please <a
+				href="http://www.graymatterblog.com/peer-peer-recognition-programs-ignites-business/"
+				target="_blank">click here.</a>
+		</p>
+
+
+	</footer>
+
+</body>
+</html>

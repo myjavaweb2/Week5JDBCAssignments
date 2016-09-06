@@ -1,0 +1,13 @@
+"player_id";"first_name";"last_name";"current_last_team";"position";"total_points";"championships_won";"mvp_won"
+1;"Kareem";"Abdul-Jabbar";"Los Angeles Lakers";"Center";38387;6;6
+2;"Charles";"Barkley";"Houston Rockets";"Forward";23757;0;1
+3;"Larry";"Bird";"Boston Celtics";"Forward";21791;3;3
+4;"Wilt";"Chamberlain";"Los Angeles Lakers";"Center";31419;2;4
+5;"Magic";"Johnson";"Los Angeles Lakers";"Guard/Forward";17707;5;3
+6;"Hakeem";"Olajuwon";"Toronto Raptors";"Center";26946;2;1
+7;"Shaquille";"O'Neal";"Boston Celtics";"Center";28596;4;1
+8;"Bill";"Russell";"Boston Celtics";"Center";14522;11;5
+9;"Michael";"Jordan";"Washington Wizards";"Guard/Forward";32292;6;5
+10;"Oscar";"Robertson";"Milwaukee Bucks";"Guard/Forward";26710;1;1
+12;"James";"LeBron";"Cleveland Cavaliers";"Forward";26833;5;7
+13;"Tim";"Duncan";"San Antonio Spurs";"Center";26496;4;2

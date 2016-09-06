@@ -1,0 +1,91 @@
+package com.nbaplayer;
+
+public class player {
+	
+	private String playerID = null;
+	private String firstName = null;
+	private String lastName = null;
+	private String position = null;
+	private String currentLastTeam = null;
+	private int totalPoints = 0;
+	private int championshipsWon = 0;
+	private int mvpWon = 0;
+	
+	public player() {
+		super();
+	}
+
+	public String getPlayerID() {
+		return playerID;
+	}
+
+	public void setPlayerID(String playerID) {
+		this.playerID = playerID;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public String getPosition() {
+		return position;
+	}
+
+	public void setPosition(String position) {
+		this.position = position;
+	}
+
+	public String getCurrentLastTeam() {
+		return currentLastTeam;
+	}
+
+	public void setCurrentLastTeam(String currentLastTeam) {
+		this.currentLastTeam = currentLastTeam;
+	}
+
+	public int getTotalPoints() {
+		return totalPoints;
+	}
+
+	public void setTotalPoints(int totalPoints) {
+		this.totalPoints = totalPoints;
+	}
+
+	public int getChampionshipsWon() {
+		return championshipsWon;
+	}
+
+	public void setChampionshipsWon(int championshipsWon) {
+		this.championshipsWon = championshipsWon;
+	}
+
+	public int getMvpWon() {
+		return mvpWon;
+	}
+
+	public void setMvpWon(int mvpWon) {
+		this.mvpWon = mvpWon;
+	}
+
+	@Override
+	public String toString() {
+		return "player [playerID=" + playerID + ", firstName=" + firstName + ", lastName=" + lastName + ", position="
+				+ position + ", currentLastTeam=" + currentLastTeam + ", totalPoints=" + totalPoints
+				+ ", championshipsWon=" + championshipsWon + ", mvpWon=" + mvpWon + "]";
+	}
+	
+	
+
+}

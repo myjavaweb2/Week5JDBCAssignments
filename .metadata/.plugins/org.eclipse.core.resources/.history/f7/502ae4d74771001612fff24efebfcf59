@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Famous NBA Players</title>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+
+
+</head>
+<body>
+
+	<header>
+
+		<h1>Famous NBA Players in History</h1>
+
+	</header>
+
+	<main>
+
+	<h2>A Brief History of the National Basketball Association</h2>
+
+	<p>The National Basketball Association (NBA) is one of the most
+		important professional sport associations in North America. The NBA
+		was founded in 1946 in New York City, New York. It is widely
+		considered to be the premier men's professional basketball league in
+		the world. It has 30 teams which are all based in the United States
+		except for 1 that is based in Canada. Over the years, a lot of the NBA
+		players have amassed lot of wealth because they are paid handsomely
+		than anyone can every dream of earning from regular mearge paying
+		jobs. As a result, almost everyone want to become professional
+		basketball players. Unfortunately, it requires some supreme basketball
+		skills to become a professional basketball player and not everyone is
+		so endowed with those unique high sportsmanship skills. Its been over
+		70 years now since the founding of the NBA and over that period of
+		time, a lot of players have become so famous for being one of the
+		greatest basketball players.</p>
+
+	<h2>List of Some of the Famous NBA Players</h2>
+
+	<p>There are so many great and famous NBA players. Some of those
+		players achieved their greatness on the basketball court while others
+		do so outside of the basketball court by the impact they have on the
+		world.</p>
+	<br>
+
+	<p>Please click here to see a list of some of the famous NBA
+		players.</p>
+
+	<table class="table table-striped"; style="width: 80%;">
+		<tr>
+			<th>Player ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Current or Last Team</th>
+			<th>Position</th>
+			<th>Total Points</th>
+			<th>Championships Won></th>
+			<th>MVP Won</th>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+	</table>
+		
+	<br>
+	<img alt="2016 Featured Employees" src="images/employees.jpg"> 
+	</main>
+
+	<aside>
+		<h3>Famous NBA Player Recommendation Form</h3>
+
+		<img alt="2016 Featured Employees" src="images/employee_pride.jpg"
+			width="250px"><br>
+
+		<p>Please use the form below to recommend an NBA player employee that you
+			would like to be included in the Famous NBA players list.</p>
+
+		<form action="addToDatabase" method="post">
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Current or Last Team:<br> <input type="text" name="current_last_team"><br>
+			Position:<br> <input type="text" name="position"><br>
+			Total Points:<br> <input type="text" name="total_points"><br> 
+			Championships Won:<br> <input type="text" name="championships_won"><br>
+			MVP Won:<br> <input type="text" name="mvp_Won"><br>
+			<input type="submit" value="Submit">
+		</form>
+
+		<h3>Featured Employee Program Deletion Form</h3>
+
+		<p>Please use the form below to delete the name of an employee who
+			have been featured in our Featured Employee Program who is now
+			retired or is no longer with our company. We will miss them and wish
+			them all the best in retirement or in their new line of work</p>
+
+		<form action="">
+			Employee ID:<br> <input type="text" name="employee_id"><br>
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Position:<br> <input type="text" name="position"><br>
+			Salary:<br> <input type="text" name="salary"><br> <input
+				type="submit" value="Submit">
+		</form>
+
+		<h3>Featured Employee Program Update Form</h3>
+
+		<p>Please use the form below to update the information on an
+			employee who is featured in our Featured Employee Program. We try to
+			have accurate information about each of our Featured Employees and we
+			will appreciate your help in ensuring that we always have the correct
+			information on our Featured Employees.</p>
+
+		<form action="">
+			Employee ID:<br> <input type="text" name="employee_id"><br>
+			First name:<br> <input type="text" name="first_name"><br>
+			Last name:<br> <input type="text" name="last_name"><br>
+			Position:<br> <input type="text" name="position"><br>
+			Salary:<br> <input type="text" name="salary"><br> <input
+				type="submit" value="Submit">
+		</form>
+
+	</aside>
+
+	<footer>
+
+		<img alt="2016 Featured Employees" src="images/employees2.jpg"
+			width="250px">
+
+		<p>
+			For more information and pictures about our Featured Employees
+			Program, please <a
+				href="http://www.graymatterblog.com/peer-peer-recognition-programs-ignites-business/"
+				target="_blank">click here.</a>
+		</p>
+
+
+	</footer>
+
+</body>
+</html>
